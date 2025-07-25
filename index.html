@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invoice & Cash Book</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Invoice Generator</h1>
+    <div class="invoice-form">
+      <input type="text" id="item" placeholder="Item Name" />
+      <input type="number" id="quantity" placeholder="Quantity" />
+      <input type="number" id="price" placeholder="Unit Price" />
+      <input type="number" id="tax" placeholder="Tax (%)" />
+      <button onclick="addInvoice()">Add Invoice</button>
+    </div>
+
+    <h2>Invoices</h2>
+    <table id="invoiceTable">
+      <thead>
+        <tr>
+          <th>Item</th><th>Qty</th><th>Price</th><th>Tax</th><th>Total</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <h2>Cash Book</h2>
+    <table id="cashBookTable">
+      <thead>
+        <tr>
+          <th>Date</th><th>Type</th><th>Description</th><th>Amount</th><th>Balance</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
